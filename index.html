@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>counter - git sample repository</title>
+</head>
+<body>
+  <div>
+    <input type="number" id="counter" value="0" readonly>
+    <button id="increment">count</button>
+  </div>
+  <script type="text/javascript">
+    (function() {
+      const iCounter = document.getElementById('counter');
+      const bIncrement = document.getElementById('increment');
+      bIncrement.onclick = () => {
+        alert('Increment!');
+        iCounter.value = +iCounter.value + 1;
+      }
+    })();
+  </script>
+</body>
+</html>
