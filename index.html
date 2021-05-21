@@ -2,19 +2,19 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>counter - git sample repository</title>
+  <title>カウンター git サンプルレポジトリ</title>
 </head>
 <body>
   <div>
     <input type="number" id="counter" value="0" readonly>
-    <button id="increment">count</button>
+    <button id="increment">増やす</button>
   </div>
   <script type="text/javascript">
     (function() {
       const iCounter = document.getElementById('counter');
       const bIncrement = document.getElementById('increment');
       bIncrement.onclick = () => {
-        alert('Increment!');
+        alert('増加します！');
         iCounter.value = +iCounter.value + 1;
       }
     })();
